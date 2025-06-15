@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hola Mundo Cruel</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      text-align: center;
+      font-family: sans-serif;
+      margin-top: 200px;
+    }
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola, mundo cruel</h1>
+  <button onclick="desaparecer()">Sálvame</button>
+
+  <script>
+    function desaparecer() {
+      document.querySelector("button").remove();
+      document.querySelector("h1").textContent = "Demasiado tarde...";
+    }
+  </script>
+</body>
+</html>
